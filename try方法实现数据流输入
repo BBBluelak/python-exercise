@@ -1,0 +1,19 @@
+while True:
+    try:
+        n = input()
+        digit_sum = sum(int(digit) for digit in n)
+        print(digit_sum)
+    except EOFError:
+        break
+'''输入一个正整数，求其各个数位上的数字之和。例如，输入12345，输出15。
+
+输入格式:
+测试数据有多组，处理到文件尾。每组测试输入一个正整数n（int范围内）。
+
+输出格式:
+对于每组测试，输出每个n对应的各位数字和。
+
+输入样例:
+12345
+输出样例:
+15'''
