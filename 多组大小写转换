@@ -1,0 +1,19 @@
+while True:
+    try:
+        a = input()
+        while True:
+            if 'A'<=a[0]<='Z':
+                break
+            else:
+                a1 = chr(ord(a[0]) - 32) + a[1:]  # 将第一个字符转换为大写
+            break
+
+        print(a1)
+
+    except EOFError:
+        break
+'''测试数据有多组，处理到文件尾。每组测试输入一行，
+包含一个长度不超过100的英文句子（仅包含大小写英文字母和空格）
+，单词之间以一个空格间隔。'''
+'''I like acm
+i want to get Accepted'''
